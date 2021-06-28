@@ -1,0 +1,83 @@
+.schedule-table {
+  border-style: solid;
+}
+
+.schedule-days-in-week {
+  width: 14%;
+  background-color: lightgoldenrodyellow;
+  font-size: 1.5rem;
+}
+
+.schedule-date-cell {
+  width: 14%;
+  height: 150px;
+  padding: 5px;
+}
+
+.schedule-session-group {
+  height: 90px;
+  margin-top: 10px;
+}
+
+.schedule-list-item {
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  padding-top: 2px;
+}
+
+.align-left {
+  float: left;
+}
+
+.space-between {
+  clear: both;
+}
+
+.align-right {
+  float: right;
+}
+
+.schedule-btn-detail {
+  height: 24px;
+  width: 40px;
+  padding: 0;
+  font-size: 14px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 1rem;
+}
+
+.span-session {
+  width: 60%;
+  font-size: 12px;
+}
+
+.morning-notification {
+  background: rgb(249,241,199);
+}
+
+.afternoon-notification {
+  background: rgb(185,233,254);
+}
+
+.evening-notification {
+  background: rgb(232,199,241);
+}
+
+.out-of-range-month {
+  background-color: lightgray;
+}
+
+.circle-today {
+  background: lightsalmon;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 6px;
+}
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-Calendar.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="stylesheet" href="assets/css/schedule.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="color: var(--dark);">
+            <div class="container"><a class="navbar-brand" href="#">Media Bizzar</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="availability.html">Availability</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="schedule.html">Schedule</a></li>
+                    </ul>
+                    <form class="form-inline mr-auto" target="_self">
+                        <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input class="form-control search-field" type="search" id="search-field" name="search"></div>
+                    </form><a class="btn btn-light bg-danger action-button" role="button" href="logout.php">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-xl-3" id="profile-panel">
+                <div class="profile-card"><img class="card-img" src="assets/img/miami.jpg" alt="Card background"><img class="profile-img" src="assets/img/male_random.png" width="Card profile">
+                    <h1 class="text-center employee-name">Nhat Nam Ha</h1>
+                    <p class="text-center birthdate profile-info">12-01-2001</p>
+                    <p class="text-center position profile-info">Employee</p>
+                    <p class="text-center department profile-info">Human Resources</p>
+                    <p class="text-center contract profile-info">Full-time</p><button class="btn btn-primary" id="btn-edit-profile" type="button">Edit PROFILE</button>
+                </div>
+            </div>
+            <div class="col-md-8 col-xl-9" id="main-content">
+                <div class="text-left d-inline">
+                    <div class="d-flex float-left justify-content-xl-start">
+                        <div class="btn-group" role="group"><button class="btn btn-primary" id="btn-schedule-previous" type="button">&lt;&lt;&lt;</button><button class="btn btn-primary" id="btn-schedule-next" type="button">&gt;&gt;&gt;</button></div>
+                    </div>
+                    <div>
+                        <h3 class="text-center d-xl-flex justify-content-xl-center" id="schedule-heading">April, 2021</h3>
+                    </div>
+                </div>
+                <div class="table-responsive table-bordered schedule-table">
+                    <table class="table table-bordered" id="schedule-overview">
+                        <thead>
+                            <tr>
+                                <th class="schedule-days-in-week">Sun</th>
+                                <th class="schedule-days-in-week">Mon</th>
+                                <th class="schedule-days-in-week">Tue</th>
+                                <th class="schedule-days-in-week">Wed</th>
+                                <th class="schedule-days-in-week">Thu</th>
+                                <th class="schedule-days-in-week">Fri</th>
+                                <th class="schedule-days-in-week">Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody id="schedule-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Company Name</h3>
+                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+            </div>
+            <p class="copyright">Media Bizzar © 2021</p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/profile.js"></script>
+    <script src="assets/js/schedule.js"></script>
+</body>
+
+</html>
